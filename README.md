@@ -1,9 +1,8 @@
 # HELLO DEPT®
 
 I have completed the assessment with some extra and cool stuff  😉
-The assessment is divided into two main parts. 
 
-## Backend
+## Backend Code
 
  - Repository: https://github.com/hady-achkar/dept_assessment_backend
  - Live: https://dept-api.abaalltheway.com
