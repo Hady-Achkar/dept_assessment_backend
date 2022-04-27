@@ -3,6 +3,7 @@ export interface Case {
 	content: string
 	work: string
 	image: string
+	thumbnail: string
 	description: string
 	industry: string
 }

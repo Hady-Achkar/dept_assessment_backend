@@ -13,6 +13,11 @@ const CasesSchema = new Schema<Case>(
 			trim: true,
 			required: [true, 'content is a required field'],
 		},
+		thumbnail: {
+			type: String,
+			trim: true,
+			required: [true, 'thumbnail is a required field'],
+		},
 		image: {
 			type: String,
 			trim: true,
