@@ -1,10 +1,10 @@
 import {Request, Response} from 'express'
 import cases from '../../models/cases'
-import {Case} from '../../types'
 
 export default async (req: Request, res: Response) => {
 	try {
-		const {title, content, work, image, description, industry} = req.body
+		const {title, image, content, work, thumbnail, description, industry} =
+			req.body
 
 		if (!title || title === '') {
 			return res.status(400).json({
@@ -19,6 +19,11 @@ export default async (req: Request, res: Response) => {
 		if (!work || work === '') {
 			return res.status(400).json({
 				message: 'work is a required field',
+			})
+		}
+		if (!thumbnail || thumbnail === '') {
+			return res.status(400).json({
+				message: 'thumbnail is a required field',
 			})
 		}
 		if (!image || image === '') {
@@ -42,6 +47,7 @@ export default async (req: Request, res: Response) => {
 			content,
 			work,
 			image,
+			thumbnail,
 			industry,
 			description,
 		})

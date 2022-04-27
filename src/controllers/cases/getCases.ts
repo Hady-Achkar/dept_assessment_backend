@@ -3,7 +3,7 @@ import cases from '../../models/cases'
 
 export default async (_: Request, res: Response) => {
 	try {
-		const _cases = await cases.find({})
+		const _cases = await cases.find({}).sort({createdAt: -1})
 
 		if (!cases || _cases.length === 0) {
 			return res.status(404).json({
