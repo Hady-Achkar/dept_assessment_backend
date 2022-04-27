@@ -34,4 +34,4 @@ Then run `npm run dev` or `yarn dev`
 
 Using **Terminal** `curl http://localhost:5000/cases`
 Using **Postman** `Method:GET` `url: http://localhost:5000/cases`
-Or simply on your browser enter the url `curl http://localhost:5000/cases`
+Or simply on your browser enter the url `http://localhost:5000/cases`
